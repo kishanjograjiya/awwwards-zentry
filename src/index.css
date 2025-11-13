@@ -66,6 +66,18 @@ body {
   @apply border border-white/20;
 }
 
+@utility bento-tilt_1 {
+  @apply relative border-hsla col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+}
+
+@utility bento-tilt_2 {
+  @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+}
+
+@utility bento-title {
+  @apply uppercase md:text-6xl text-4xl font-black font-zentry;
+}
+
 @layer utilities {
   .nav-hover-btn {
     @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
@@ -110,7 +122,7 @@ body {
     will-change: opacity, transform;
   }
 
-  .bento-tilt_1 {
+  /* .bento-tilt_1 {
     @apply border-hsla relative col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
   }
 
@@ -120,7 +132,7 @@ body {
 
   .bento-title {
     @apply uppercase md:text-6xl text-4xl font-black font-zentry;
-  }
+  } */
 
   .story-img-container {
     @apply relative md:h-dvh h-[90vh] w-full;
