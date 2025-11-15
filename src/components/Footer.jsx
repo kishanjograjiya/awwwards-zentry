@@ -1,10 +1,18 @@
-import { FaDiscord, FaGithub, FaTwitch, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaGithubAlt,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 
-const links = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://github.com", icon: <FaGithub /> },
-  { href: "https://twitch.com", icon: <FaTwitch /> },
+const socialLinks = [
+  { href: "https://github.com/kishanjograjiya", icon: <FaGithubAlt /> },
+  {
+    href: "https://www.linkedin.com/in/kishanjograjiya",
+    icon: <FaLinkedinIn />,
+  },
+  { href: "https://x.com/JograjiyaKishan", icon: <FaXTwitter /> },
+  { href: "https://www.instagram.com/jograjiyakishan", icon: <FaInstagram /> },
 ];
 
 const Footer = () => {
@@ -16,7 +24,7 @@ const Footer = () => {
         </p>
 
         <div className="flex justify-center gap-4 md:justify-start">
-          {links.map((link, index) => (
+          {socialLinks.map((link, index) => (
             <a
               key={index}
               href={link.href}
